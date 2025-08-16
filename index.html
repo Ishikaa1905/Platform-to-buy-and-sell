@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Available Products</h2>
+{% if products %}
+<ul class="product-list">
+  {% for p in products %}
+    <li class="product-item" data-name="{{ p.name }}">
+      <div class="product-title">{{ p.name }}</div>
+      <div class="product-desc">{{ p.description }}</div>
+      <div class="product-price">₹{{ '%.2f'|format(p.price) }}</div>
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No products yet.</p>
+{% endif %}
+{% endblock %}
