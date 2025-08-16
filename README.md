@@ -1,4 +1,4 @@
-# Buy & Sell Platform (Simple)
+# Buy & Sell Platform
 
 A minimal Flask + MySQL app where users can register/login, vendors can add products, and everyone can browse products.
 
